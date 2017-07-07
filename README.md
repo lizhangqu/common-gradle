@@ -3,7 +3,7 @@
 
 **download**
 
-download this git repository and copy the *.gradle to root project dir gralde/*.gradle
+download this git repository and copy the \*.gradle to root project dir gralde/\*.gradle
 
 **common_version.gradle**
 
