@@ -116,6 +116,7 @@ add this in root project build.gradle
 ```
 buildscript {
     //for buildscript
+    apply from: 'gradle/common_version.gradle'
     apply from: 'gradle/common_function.gradle'
 
     repositories {
@@ -128,6 +129,7 @@ buildscript {
 }
 
 // for project
+apply from: 'gradle/common_version.gradle'
 apply from: 'gradle/common_function.gradle'
 ```
 
