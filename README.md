@@ -108,3 +108,34 @@ project.ext{
 	POM_DEVELOPER_NAME=
 }
 ```
+
+**common_function.gradle**
+
+add this in root project build.gradle
+
+```
+buildscript {
+    //for buildscript
+    apply from: 'gradle/common_function.gradle'
+
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:${global_androidGradlePluginVersion}"
+    }
+}
+
+// for project
+apply from: 'gradle/common_function.gradle'
+```
+
+function
+
+```
+project.logger.info "isJenkins:${isJenkins()}"
+project.logger.info "getGitCommitCount:${getGitCommitCount('master')}"
+project.logger.info "getGitTag:${getGitTag('master')}"
+project.logger.info "getDate:${getDate()}"
+```
