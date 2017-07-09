@@ -70,6 +70,7 @@ if (project.hasProperty("android")) {
     task androidJavadocs(type: Javadoc) {
         source = android.sourceSets.main.java.srcDirs
         classpath += configurations.compile
+        classpath += configurations.provided
         ext.androidJar = "${android.sdkDirectory}/platforms/${android.compileSdkVersion}/android.jar"
         classpath += files(ext.androidJar)
         classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
