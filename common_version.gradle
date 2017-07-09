@@ -15,5 +15,5 @@ ext {
     //test library
     global_junitVersion = "4.12"
     //third library
-    global_okhttp = "3.8.1"
+    global_okhttpVersion = "3.8.1"
 }
