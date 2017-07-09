@@ -228,6 +228,7 @@ bintray {
     pkg {
         repo = 'maven'
         name = POM_ARTIFACT_ID
+        desc = POM_DESCRIPTION
         licenses = [POM_LICENSE]
         websiteUrl = POM_WEBSITE_URL
         vcsUrl = POM_VCS_URL
